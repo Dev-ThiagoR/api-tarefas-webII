@@ -1,1 +1,6 @@
 # api-tarefas-webII
+Essa API foi desenvolvida para o gerenciamento de tarefas, utilizando Node.js com o framework Express. As funcionalidades disponíveis incluem: criação de tarefas, listagem de todas as tarefas, busca por uma tarefa específica pelo ID, atualização completa das informações de uma tarefa, marcação de uma tarefa como concluída e exclusão de tarefas. Cada rota está devidamente configurada para trabalhar com dados no formato JSON, e as validações básicas são feitas por meio de middleware.
+
+Para testar a API no Postman, você precisa garantir que o servidor esteja rodando localmente, normalmente em http://localhost:3000. No Postman, selecione o método HTTP adequado para cada rota (GET, POST, PUT, PATCH, DELETE), insira a URL correspondente, e nos métodos que exigem envio de dados (como POST e PUT), vá na aba "Body", escolha "raw", selecione o tipo "JSON" e insira o corpo da requisição conforme os exemplos indicados.
+
+A resposta da API vai variar de acordo com o método, podendo retornar dados da tarefa, mensagens de erro ou confirmação de sucesso. Códigos de status como 200 (OK), 201 (Created), 204 (No Content), 400 (Bad Request) e 404 (Not Found) ajudam a entender o resultado de cada requisição. A utilização do Postman facilita esses testes, simulando o comportamento de um cliente real de forma prática e visual.
